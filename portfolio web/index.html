@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="klíčové vyhledávání">
+    <meta name="description" content="co ta stránka dělá">
+    <title>My portfolio</title>
+    <link rel="preload" as="style" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav-bar">
+    <div id="toggle">
+        <i class="indicator"></i>
+    </div>
+    <a id="contact-button" href="#contact">Contact</a>        
+    </nav>
+    <section id="profile">
+      <div class="container">
+        <img id="my-foto" src="./assets/img/myfoto.png">
+      </div>
+      <div class="main-text">
+        <p>Hi!</p>
+        <h1>I'm BRUNO,</h1>
+        <p>an excited programmer and problem solver</p>
+        <button class="go-btn" onclick="clicked()">About me</button>
+        <button class="go-btn" onclick="clicked1()">My projects</button>        
+      </div>
+    </section>
+    <section id="about-me">
+      <div id="scrollto"></div>
+      <div class="container">
+        <div class="text-2">
+          <h2>About me</h2>
+          <p1>
+            I started with programming, because creating something new and solving problems makes me excited.
+          </p1>
+          <p1>
+            I was always good with numbers and noticing small details, which helps me a lot in this field.
+          </p1>
+        </div>
+        <div class="text-3">
+          <h2>Programming languages</h2>
+            <ol style="list-style-type: disc;">
+              <li>Javascript</li>
+              <li>Typescript</li>
+              <li>Python</li>
+              <li>C++</li>
+            </ol>
+        </div>
+        <div class="image-container">
+          <img id="puzzle" src="./assets/img/puzzle.png">
+        </div>
+      </div> 
+    </section>
+    <div id="scrollto1"></div>
+    <section id="projects">
+      <div class="third-h">
+        <h3>
+          My past projects
+        </h3>
+      </div>
+      <div class="project-img">
+        <img class="img1" src="./assets/img/project-pic1.png">
+        <img class="img1" src="./assets/img/project-pic2.png">
+      </div>
+    </section>
+    <section1>
+      <span id="contact"></span>
+      <div class="contact-container">
+        <form action="" class="contact-left">
+          <div class="contact-left-title">
+            <h2>Contact me</h2>
+            <hr>
+          </div>
+          <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+          <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+          <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="contact-right">
+          <a target="_blank" href="https://github.com/bruno0067"><img src="./assets/img/github.png" alt=""></a>
+        </div>
+      </div>
+    </section1>
+	<script src="assets/js/script.js"></script>
+  </body>
+</html>
