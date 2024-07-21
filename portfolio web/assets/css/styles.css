@@ -75,10 +75,13 @@ body.active {
 
 section {
     padding-top: 4vh;
-    padding-bottom: 40vh;
+    padding-bottom: 4vh;
     margin: 0 10rem;
     min-height: fit-content;
     display: flex;
+}
+
+section:not(:last-of-type) {
     border-bottom: 4px solid black;
 }
 
@@ -86,7 +89,6 @@ section {
     display:flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
     padding-top: 150px;
 }
 
@@ -197,10 +199,13 @@ ol {
 
 .contact-container {
     display: flex;
-    height: 100vh;
     align-items: center;
-    justify-content: space-evenly;
-    margin-left: 200px;
+    justify-content: center;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
 }
 
 .contact-left {
@@ -277,4 +282,17 @@ ol {
     cursor: pointer;
     background: black;
     color: white;
+}
+
+@media (max-width: 900px) {
+    #my-foto{
+        width: 250px;
+    }
+    #profile{
+        gap: 0;
+    }
+    section, #about-me>.container, .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
 }
